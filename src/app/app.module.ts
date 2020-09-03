@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { ErrorComponent } from './components/error/error.component';
 import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CalcularComponent } from './components/calcular/calcular.component';
 
 @NgModule({
   declarations: [
@@ -12,10 +14,12 @@ import { BienvenidoComponent } from './components/bienvenido/bienvenido.componen
     LoginComponent,
     ErrorComponent,
     BienvenidoComponent,
+    CalcularComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
