@@ -7,6 +7,10 @@ import { ErrorComponent } from './components/error/error.component';
 import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CalcularComponent } from './components/calcular/calcular.component';
+import { ControlEntidadComponent } from './components/control-entidad/control-entidad.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListadoComponent } from './components/listado/listado.component';
+import { DetalleEntidadComponent } from './components/detalle-entidad/detalle-entidad.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +19,15 @@ import { CalcularComponent } from './components/calcular/calcular.component';
     ErrorComponent,
     BienvenidoComponent,
     CalcularComponent,
+    ControlEntidadComponent,
+    ListadoComponent,
+    DetalleEntidadComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

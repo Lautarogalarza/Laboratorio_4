@@ -5,10 +5,12 @@ import { BienvenidoComponent } from "./components/bienvenido/bienvenido.componen
 import { LoginComponent } from "./components/login/login.component";
 import { ErrorComponent } from "./components/error/error.component";
 import { CalcularComponent } from "./components/calcular/calcular.component";
+import { ControlEntidadComponent } from "./components/control-entidad/control-entidad.component";
 
 const routes: Routes =[
 {path:'',component:LoginComponent},
 {path:'bienvenido',component:BienvenidoComponent},
+{path:'paises/listado',component:ControlEntidadComponent},
 {path:'error',component:ErrorComponent},
 {path:'calcular',component:CalcularComponent},
 

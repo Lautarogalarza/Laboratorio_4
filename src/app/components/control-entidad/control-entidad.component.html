@@ -1,0 +1,10 @@
+<div class="padre">CONTROL ENTIDADES</div>
+
+<div class="listado">
+    <app-listado [listadoPaises]='listado' (emitVerPais)='userSeleccionado($event)'></app-listado>
+</div>
+
+<div class="detalle">
+
+    <app-detalle-entidad [user]='usuarioSeleccionado'></app-detalle-entidad>
+</div>
